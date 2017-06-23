@@ -8,7 +8,7 @@ from distutils.core import setup
 
 setup(
     name='nester',
-    version='1.1.0',
+    version='1.2.0',
     py_modules=['firstCode'],
     author='Bryan.lan',
     author_email='bryan.lan@vengasz.com',

@@ -5,8 +5,8 @@
 # @Link:https://github.com/Bryan130
 
 
-def print_lol(the_list, level):
-    """这是“firstCode.py”模块，提供了一个名为
+def print_lol(the_list, level=0):
+    """这是“nester.py”模块，提供了一个名为
     print_lol()的函数，这个函数的作用是打印列表，
     其中有可能包含（也可能不包含）嵌套列表。
     第二个参数（名为level）用例再遇到嵌套列表是插入制表符"""

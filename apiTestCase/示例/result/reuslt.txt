@@ -1,0 +1,29 @@
+测试结果生成，可以查看Python nose相关文档，生成hmtl
+
+目录结构
+
+project
+
+　　|
+
+　　case#测试用例
+
+　　　　|
+
+　　　　suite#测试目录
+
+　　|
+
+　　logs#测试日志
+
+　　|
+
+　　papi#测试类
+
+　　|
+
+　　result#测试结果
+
+　　|
+
+　　setting.py#配置文件

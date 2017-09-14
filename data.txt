@@ -1,7 +1,0 @@
-bryan: Hello,bryan!
-sniper: welcome
-bryan: my name is Bryan
-sniper: haha
-bryan: my age is 13:ha
-(space)
-sniper:oh,yes

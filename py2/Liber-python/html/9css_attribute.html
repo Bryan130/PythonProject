@@ -1,0 +1,40 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>元素选择器</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		/*属性选择器: [name='value']*/
+
+		/*所有定义了id的元素*/
+		/*[id] {
+			color: red;
+			font-size: 40px;
+		}*/
+
+		/*h1[id='aa'] {
+			color: red;
+			font-size: 40px;
+		}*/
+
+		h1[id='aa'] {
+		/*h1[id='aa'][class='red'] {*/
+			color: red;
+			font-size: 40px;
+		}
+	</style>
+</head>
+
+
+<body>
+<h1 class='red'>这是一个一级标题</h1>
+<h1 class='red' id='aa'>这也是一个一级标题</h1>
+<h1 class='green' id='aa'>这也是一个一级标题</h1>
+<h1>这还是一个一级标题</h1>
+<p id='bb'>这是一个段落</p>
+<p class='red'>这也是一个段落</p>
+<p>这还是一个段落</p>
+</body>
+</html>

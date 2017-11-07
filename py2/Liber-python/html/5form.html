@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>表单</title>
+	<meta charset="utf-8">
+</head>
+
+
+<body>
+
+<form method="get">
+	<p>
+		<label for="name">用户名</label><br />
+		<input type="text" name="username" id="name">
+	</p>
+
+	<p>
+		<label for="password">密码</label><br />
+		<input type="password" name="password" id="password">
+
+	</p>
+
+	<p>	请选择你的性别: <br />
+		<input type="radio" name="sex" value='male' id="male"><label for="male">男</label>
+		<input type="radio" name="sex" value='female' id="female"><label for="female">女</label>
+		<input type="radio" name="sex" value='other' id="other"><label for="other">其他</label>
+	</p>
+
+	<p>
+		请选择你的爱好: <br />
+		<input type="checkbox" name="sport" id="sport"> <label for="sport">运动</label>
+		<input type="checkbox" name="sleep" id="sleep"> <label for="sport">休息</label>
+		<input type="checkbox" name="food" id="food"> <label for="sport">美食</label>
+		<input type="checkbox" name="game" id="game"> <label for="sport">游戏</label>
+	</p>
+
+	<p>
+		<select name='city'>
+			<option value="1">深圳</option>
+			<option value="2">北京</option>
+			<option value="3" selected="selected">上海</option>
+			<option value="4">其他</option>
+		</select>
+		<!-- <select name='district'>
+			<option value="1">南山</option>
+			<option value="2">福田</option>
+			<option value="3" selected="selected">龙岗</option>
+			<option value="4">龙华</option>
+		</select> -->
+	</p>
+
+	<p> 请写一段200字以内的自我介绍<br />
+		<textarea rows="5" cols="20" id="self_intr">
+			我是隔壁老王...
+		</textarea>
+	</p>
+	<input type="submit" name="submit">
+</form>
+</body>
+</html>

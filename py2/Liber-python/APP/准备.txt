@@ -1,0 +1,13 @@
+app自动化
+1.环境
+2.app
+3.写代码
+4.确定参数：
+    平台： （iOS   Android）     Android
+    apk名字： （包名）             com.gouhuoapp.say
+    启动页面： （activey）         .view.activity.EnterChannelActivity
+    平台版本： （4.4、5.0）
+    设备id：（emulator-5554）    emulator-5554
+    appium服务器地址： http://127.0.0.1:4723/wd/hub
+                                    http://localhost:4723/wd/hub
+

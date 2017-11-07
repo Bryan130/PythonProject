@@ -1,0 +1,73 @@
+
+服务器：apache tomcat jboss
+数据库：oracle mysql mongodb  cassandra
+开源的分布式服务框架：dubbo zookper rides rabbitmq
+子系统：oms wms cwms tms pms ums ups erp fna fsp  gfs server-gate openapi uschedule  app
+        vms mms websocket sc
+
+1.启动appium.exe 服务
+2.adb devices -l（查看连接的设备，以及设备编号）
+  adb不是一个命令错误信息解决：
+  （配置环境变量Android_HOME:D:\Android
+    path:增加两个路径：D:\Android\platform-tools;D:\Android\tools）
+
+2.1 找安卓模拟器端口号。netstat -an >d:\1.txt    启动模拟器后，再敲一次netstat -an >d:\2.txt
+3.adb connect 127.0.0.1:62001（连接到虚拟的夜神手机）
+  adb connect 127.0.0.1:6555 （连接到虚拟的夜神天天手机）
+  如果是真机，就不需要连接了。
+4.adb shell 如果没有报错，可以敲linux命令。说明手机已经连接成功。
+5.
+  (app自动化测试原理：代码去链接appnium服务   appnium服务通过apilevel 19去链接安卓的机器  去执行代码)
+  链接信息参数配置：
+  a.appnium地址：http://localhost:4723/wd/hub
+  b.手机的平台：Android
+  c.手机系统的版本号：4.4
+  d.被测试的app包名：com.winit.who
+  e.被测试app的启动页面：com.winit.who/.activity.base.Login
+  f.测试执行手机设备id:127.0.0.1:62001
+5.如果找到app的包名：
+     启动X:\Android\tools\uiautomatorviewer.bat,程序启动后，点击第二个图标。获取屏幕快照以及以后去找界面元素。
+6.如何找到app的启动页面：
+  a.关闭安卓模拟器中的app。
+  b.打开cmd窗口，输入adb logcat -c 清除所有的安卓app运行日志信息。
+  c.在cmd窗口里面输入 adb logcat ActivityManager:I *:s  实时查看安卓手机app运行日志（ActivityManager(  460): Displayed）。
+   找到启动的页面com.winit.who/.activity.base.Login
+ 7.ride里面写代码
+   导入AppiumLibrary库
+   新增变量，链接的参数
+   查找界面元素。D:\Android\tools\uiautomatorviewer.bat
+
+8.自动启动appium命令： start  "" "D:\Program Files (x86)\Appium\node.exe" "D:\Program Files (x86)\Appium\node_modules\appium\bin\appium.js"
+
+持续集成 ci  ruby python java c#  c  c++
+
+安卓自动化测试环境安装包解释：
+1.appnium    在windows上搭建appium服务，主要是用于连接安卓手机识别元素和app程序。
+2..net4.5   .net框架，用于支持.net开发的程序，这里用于支持appnium启动。
+3.robot-appiumlibrary   appium库，用于robot编写自动化用例的关键字。跟selenium2library一样。
+4.android_sdk   用于adb命令。安卓api 19，抓取app界面元素。
+5.jdk1.8     用于支持java编写程序，比如安卓虚拟机，eclipse软件
+6.一些依赖库，python2.7
+7.pip install Appium-Python-Client   python的库，appium通过webdriver驱动去操作app元素
+
+
+eclipse 用于编写代码的。编写java python代码
+ride用于编写自动化case的工具
+wxpython  python的图形界面库，用于支持ride的界面控件显示
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
